@@ -69,23 +69,23 @@ const SalesChart = () => {
   return (
     <Card>
       <CardBody>
-        <CardTitle tag="h5">Sales Summary</CardTitle>
+        <CardTitle tag="h5">Resumé</CardTitle>
         <CardSubtitle className="text-muted" tag="h6">
           Yearly Sales Report
         </CardSubtitle>
         <div className="bg-primary text-white my-3 p-3 rounded">
           <Row>
             <Col md="4">
-              <h6>Total Sales</h6>
-              <h4 className="mb-0 fw-bold">$10,345</h4>
+              <h6>Total Alerte</h6>
+              <h4 className="mb-0 fw-bold">10345</h4>
             </Col>
             <Col md="4">
-              <h6>This Month</h6>
-              <h4 className="mb-0 fw-bold">$7,545</h4>
+              <h6>Mois</h6>
+              <h4 className="mb-0 fw-bold">545</h4>
             </Col>
             <Col md="4">
-              <h6>This Week</h6>
-              <h4 className="mb-0 fw-bold">$1,345</h4>
+              <h6>Semaine</h6>
+              <h4 className="mb-0 fw-bold">45</h4>
             </Col>
           </Row>
         </div>
