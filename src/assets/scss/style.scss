@@ -4,3 +4,13 @@
 @import "~bootstrap-icons/font/bootstrap-icons.scss";
 @import "./layout/sidebar";
 @import "./layout/container";
+
+.title {
+  font-size: 2rem;
+  color: #1e2759;
+  text-align: center;
+}
+.heading {
+  display: flex;
+  flex-direction: row-reverse;
+}
