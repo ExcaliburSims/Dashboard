@@ -13,7 +13,7 @@ const tableData = [
     project: "Flexy React",
     status: "pending",
     weeks: "35",
-    budget: "95K",
+    sexe: "M",
   },
   {
     avatar: user2,
@@ -22,7 +22,7 @@ const tableData = [
     project: "Lading pro React",
     status: "done",
     weeks: "35",
-    budget: "95K",
+    sexe: "F",
   },
   {
     avatar: user3,
@@ -31,7 +31,7 @@ const tableData = [
     project: "Elite React",
     status: "holt",
     weeks: "35",
-    budget: "95K",
+    sexe: "M",
   },
   {
     avatar: user4,
@@ -40,7 +40,7 @@ const tableData = [
     project: "Flexy React",
     status: "pending",
     weeks: "35",
-    budget: "95K",
+    sexe: "F",
   },
   {
     avatar: user5,
@@ -49,7 +49,7 @@ const tableData = [
     project: "Ample React",
     status: "done",
     weeks: "35",
-    budget: "95K",
+    sexe: "M",
   },
 ];
 
@@ -58,20 +58,18 @@ const ProjectTables = () => {
     <div>
       <Card>
         <CardBody>
-          <CardTitle tag="h5">Project Listing</CardTitle>
-          <CardSubtitle className="mb-2 text-muted" tag="h6">
-            Overview of the projects
-          </CardSubtitle>
+          <CardTitle tag="h5">Utilisateurs</CardTitle>
+          <CardSubtitle className="mb-2 text-muted" tag="h6"></CardSubtitle>
 
           <Table className="no-wrap mt-3 align-middle" responsive borderless>
             <thead>
               <tr>
-                <th>Team Lead</th>
-                <th>Project</th>
+                <th>Utilisateurs</th>
+                <th>Email</th>
 
                 <th>Status</th>
-                <th>Weeks</th>
-                <th>Budget</th>
+                <th>Semaine</th>
+                <th>Sexe</th>
               </tr>
             </thead>
             <tbody>
@@ -92,7 +90,7 @@ const ProjectTables = () => {
                       </div>
                     </div>
                   </td>
-                  <td>{tdata.project}</td>
+                  <td>{tdata.email}</td>
                   <td>
                     {tdata.status === "pending" ? (
                       <span className="p-2 bg-danger rounded-circle d-inline-block ms-3"></span>
@@ -103,7 +101,7 @@ const ProjectTables = () => {
                     )}
                   </td>
                   <td>{tdata.weeks}</td>
-                  <td>{tdata.budget}</td>
+                  <td>{tdata.sexe}</td>
                 </tr>
               ))}
             </tbody>

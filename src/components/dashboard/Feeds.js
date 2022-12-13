@@ -11,19 +11,19 @@ import {
 
 const FeedData = [
   {
-    title: "Cras justo odio",
+    title: "Alerte crevaison",
     icon: "bi bi-bell",
     color: "primary",
     date: "6 minute ago",
   },
   {
-    title: "New user registered.",
+    title: "Siméon Zilu.",
     icon: "bi bi-person",
     color: "info",
     date: "6 minute ago",
   },
   {
-    title: "Server #1 overloaded.",
+    title: "Server #1 full.",
     icon: "bi bi-hdd",
     color: "danger",
     date: "6 minute ago",
@@ -35,13 +35,13 @@ const FeedData = [
     date: "6 minute ago",
   },
   {
-    title: "Cras justo odio",
+    title: "Alerte rémorquage",
     icon: "bi bi-bell",
     color: "dark",
     date: "6 minute ago",
   },
   {
-    title: "Server #1 overloaded.",
+    title: "Server #2",
     icon: "bi bi-hdd",
     color: "warning",
     date: "6 minute ago",
@@ -52,9 +52,9 @@ const Feeds = () => {
   return (
     <Card>
       <CardBody>
-        <CardTitle tag="h5">Feeds</CardTitle>
+        <CardTitle tag="h5">Flux de données</CardTitle>
         <CardSubtitle className="mb-2 text-muted" tag="h6">
-          Widget you can use
+          Mon widget traque
         </CardSubtitle>
         <ListGroup flush className="mt-4">
           {FeedData.map((feed, index) => (
