@@ -22,20 +22,34 @@ const Forms = () => {
         <Card>
           <CardTitle tag="h6" className="border-bottom p-3 mb-0">
             <i className="bi bi-bell me-2"> </i>
-            Form Example
+            Enregistrement garages
           </CardTitle>
           <CardBody>
             <Form>
               <FormGroup>
-                <Label for="exampleEmail">Email</Label>
+                <Label for="nom">Nom garage</Label>
+                <Input
+                  id="nom"
+                  name="email"
+                  placeholder="Nom garage"
+                  type="text"
+                />
+                <Label for="email">Email</Label>
                 <Input
                   id="exampleEmail"
                   name="email"
-                  placeholder="with a placeholder"
+                  placeholder="email"
                   type="email"
                 />
+                <Label for="telephone">telephone</Label>
+                <Input
+                  id="tephone"
+                  name="telephone"
+                  placeholder="telephone"
+                  type="tel"
+                />
               </FormGroup>
-              <FormGroup>
+              {/* <FormGroup>
                 <Label for="examplePassword">Password</Label>
                 <Input
                   id="examplePassword"
@@ -104,7 +118,7 @@ const Forms = () => {
               </FormGroup>
               <FormGroup check>
                 <Input type="checkbox" /> <Label check>Check me out</Label>
-              </FormGroup>
+              </FormGroup> */}
               <Button>Submit</Button>
             </Form>
           </CardBody>
