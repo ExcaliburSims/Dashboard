@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Card, Table, CardBody, CardTitle, Col } from "reactstrap";
 
 const Buttons = () => {
@@ -6,10 +7,21 @@ const Buttons = () => {
     <div>
       <Col lg="12">
         <Card>
-          <CardTitle tag="h6" className="border-bottom p-3 mb-0">
-            <i className="bi bi-card-text me-2"> </i>
-            Table with Border
+          <CardTitle
+            tag="h6"
+            className="border-bottom p-3 mb-0 d-flex flex-row justify-content-between"
+          >
+            <div>
+              <i className="bi bi-card-text me-2"> </i>
+              <span>Liste de garages</span>
+            </div>
+            <button class="btn btn-primary">
+              <Link to="/Forms" className="text-decoration-none text-white">
+                Ajouter garage
+              </Link>
+            </button>
           </CardTitle>
+
           <CardBody className="">
             <Table bordered>
               <thead>
